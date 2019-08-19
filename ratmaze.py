@@ -1,5 +1,6 @@
+  #Problem Function
   def pathing(mat, n, row, col, curr, ans, visited):
-        dirs = {'D':(1,0), 'U':(-1,0), 'L':(0,-1), 'R':(0,1)}
+        dirs = {'D':(1,0), 'U':(-1,0), 'L':(0,-1), 'R':(0,1)}   #Value key pair for various directions
         for d in dirs:
             r, c = row+dirs[d][0], col+dirs[d][1]
             if r==n-1 and c==n-1:
